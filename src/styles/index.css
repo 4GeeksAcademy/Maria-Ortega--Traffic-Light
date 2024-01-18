@@ -8,7 +8,7 @@
 
 #box {
 background-color: black;
-width: 50px;
+width: 70px;
 height: 175px;
 border-radius: 10px;
 margin-left:auto;
@@ -35,7 +35,16 @@ background-color: red;
 background-color: green;
 }
     
-.red .glow  {
-box-shadow: 0px 0px 40px 50px yellow;
+.red.glow  {
+box-shadow: 0px 0px 40px 20px red;
+
+}
+.yellow.glow  {
+    box-shadow: 0px 0px 40px 20px yellow;
+    
+    }
+
+.green.glow  {
+box-shadow: 0px 0px 40px 20px green;
 
 }

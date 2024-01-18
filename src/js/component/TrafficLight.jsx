@@ -1,16 +1,14 @@
 import React, { useState } from "react";
 
-// const {colorChange , setColorChange} = useState {null};
-
-
 export const TrafficLight = () => {
+  const [color , setColor] = useState("red");
   return (
     <div>
       <div id="topSection"></div>
       <div id="box">
-        <div className="red light" onClick={setColorChange}></div>
-        <div className="yellow light" onClick={setColorChange}></div>
-        <div className="green light" onClick={setColorChange}></div>
+        <div className="red light glow" onClick={()=>setColor("red")}></div>
+        <div className="yellow light" onClick={()=>setColor("yellow")}></div>
+        <div className="green light" onClick={()=>setColor("green")}></div>
       </div>
     </div>
   );
